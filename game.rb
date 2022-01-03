@@ -1,6 +1,7 @@
 require './quiz'
 require 'pp'
-class Decider
+# more generic name?? like game
+class Game
   @@current_player
   @@player1
   @@player2
@@ -27,17 +28,17 @@ class Decider
       #-- Game Over ---
       puts "Player 2 wins with score of #{@@player2.life}/3"
       puts "--- Game Over ---"
-      puts "--- Good Bye! ---"
+      puts " Good Bye! "
     elsif @@player2.life == 0
       #-- Game Over ---
       puts "Player 1 wins with score of #{@@player1.life}/3"
       puts "--- Game Over ---"
-      puts "--- Good Bye! ---"
+      puts " Good Bye! "
     else 
       # else
       puts "P1 : #{@@player1.life}/3 vs P2 : #{@@player2.life}/3"
       #-- New turn ---
-      puts "--- New Game ---"
+      puts "--- New Turn ---"
       change_player()
       ask_question()
     end

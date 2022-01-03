@@ -4,4 +4,7 @@ class Player
       @name = name
       @life = 3 # intial 3 lives for a player
     end
+    # def change_life
+    #   @life -= 1
+    # end
 end
