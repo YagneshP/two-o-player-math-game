@@ -1,6 +1,6 @@
 require './quiz'
 require 'pp'
-# more generic name?? like game
+
 class Game
   @@current_player
   @@player1
@@ -18,9 +18,7 @@ class Game
       check_life()
     end
   end
-  # def change_life(player)
-  #   player.life -= 1
-  # end
+
   def check_life
     # after check the answer check the life
     # if life 0
