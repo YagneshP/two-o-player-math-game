@@ -13,14 +13,14 @@ class Game
     else
       puts "Seriously ? No!"
       # change life of the player
-      change_life(@@current_player)
+      @@current_player.change_life()
       # check life
       check_life()
     end
   end
-  def change_life(player)
-    player.life -= 1
-  end
+  # def change_life(player)
+  #   player.life -= 1
+  # end
   def check_life
     # after check the answer check the life
     # if life 0
